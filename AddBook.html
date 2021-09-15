@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <script src="js/lib/jquery-3.2.1.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h2>Library Management System</h2>
+    </header>
+    <div class="formBlock">
+        <h2 style="color: #3b3b61;  font-family:  sans-serif; font-weight: bold;">
+            Add New Book
+        </h2>
+    <form id="bookForm" method="post" action="index.html" onsubmit="addBook()">
+         <input class="textbox" type="text" name="bookName" placeholder="Book Name" required>
+        <input class="textbox" type="text" name="authorName" placeholder="Author Name" required>
+        <input class="textbox" type="text" name="publisherName" placeholder="Publisher Name" required>
+        <input class="textbox" type="date" name="datePublished" style="text-transform: uppercase">
+        <input class="custom-button right-btn" type="submit" value="Add Book">
+              </form>
+<a class="back-btn" href="index.html">Go Back</a>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald:wght@300&display=swap" rel="stylesheet">
+    <script src="js/lib/jquery-3.2.1.js"></script>   
+</head>
+<body>
+    <body id="index">
+        <header>
+            <h2>Library Management System</h2>
+        </header>
+        <div id="noBook" class="noBook" style="display: none;">
+            <p>Not much of a reader, eh?</p>
+
+           <a href="addBook.html">
+            <button >
+                ADD BOOK
+            </button>
+           </a>
+        </div>
+        <div id="bookFound" class="book" style="display: none;">
+            <div class="linkButtons">
+                <a href="authors.html">
+                    <button>
+                        Authors
+                    </button>
+                </a>
+                <a href="publishers.html">
+                    <button>
+                        Publishers
+                    </button>
+                </a>
+                <button id="purgeLibrary" class="right-btn">
+                    Delete Book
+                </button>
+                <a href="addBook.html">
+                    <button class="right-btn">
+                        Add Book
+                    </button>
+                </a>
+            </div>
+            <div>
+                <table id="booksList" class="bookList">
+                    <tr>
+                        <th>Book #</th>
+                        <th>Book Title</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Date Published</th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <script src="js/index.js"></script>
+     
+</body>
+</html>
